@@ -1,0 +1,546 @@
+
+body{
+    background-color: #f5f5f5;
+}
+.devfolio-navbar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+z-index:999;
+background-color: rgba(0, 0, 0, 0.9);
+}
+.container >a{
+    font-size: 28px;
+    font-weight: 700;
+}
+.container .collapse ul li{
+font-size: 16px;
+font-weight: 600;
+position: relative;
+}
+.container .collapse ul li::after{
+content: "";
+position: absolute;
+bottom: 0;
+left: 0;
+height: 2px;
+width: 0%;
+background-color: white
+}
+
+.container .collapse ul .nav-item:hover::after{
+    width: 100%;
+    transition: all 0.5s;
+}
+.home{
+position: relative;
+background-image: url('../images/hero-bg.jpg');
+background-attachment: scroll;
+background-size:cover;
+background-position: center;
+height: 100vh;
+
+}
+.dark-layer{
+position: absolute;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+h1{
+    position: relative;
+font-size: 72px;
+font-weight: 600;
+margin-bottom: 24px;
+}
+
+.home-content span::after{
+font-size: 40px;
+font-weight: 600;
+animation: typing 30s infinite;
+    position: absolute;
+    content: "|";
+    left: 50%;
+    transform: translate(-50%);
+
+}
+/*  Designer > Developer > Freelancer > Photographer */
+@keyframes typing{
+
+0%{content: "";}
+0.769231%{content: "|";}
+1.53846%{content: "";}
+2.30769%{content: "|";}
+3.07692%{content: "";}
+3.84615%{content: "|";}
+4.61538%{content: "";}
+5.38462%{content: "|";}
+6.15385%{content: "D|";}
+6.92308%{content: "De|";}
+7.69231%{content: "Des|";}
+8.46154%{content: "Desi|";}
+9.23077%{content: "Desig|";}
+10%{content: "Design|";}
+10.7692%{content: "Designe|";}
+11.5385%{content: "Designer|";}
+12.3077%{content: "Designer";}
+13.0769%{content: "Designer|";}
+13.8462%{content: "Designer";}
+14.6154%{content: "Designer|";}
+15.3846%{content: "Designer";}
+16.1538%{content: "Designer|";}
+16.9231%{content: "Designer";}
+17.6923%{content: "Designer|";}
+18.4615%{content: "Designe|";}
+19.2308%{content: "Design|";}
+20%{content: "Desig|";}
+20.7692%{content: "Desi|";}
+21.5385%{content: "Des|";}
+22.3077%{content: "De|";}
+23.0769%{content: "Dev|";}
+23.8461%{content: "Deve|";}
+24.6154%{content: "Devel|";}
+25.3846%{content: "Develo|";}
+26.1538%{content: "Develop|";}
+26.9231%{content: "Develope|";}
+27.6923%{content: "Developer|";}
+28.4615%{content: "Developer";}
+29.2308%{content: "Developer|";}
+30%{content: "Developer";}
+30.7692%{content: "Developer|";}
+31.5384%{content: "Developer";}
+32.3077%{content: "Developer|";}
+33.0769%{content: "Developer";}
+33.8461%{content: "Developer|";}
+34.6154%{content: "Develope|";}
+35.3846%{content: "Develop|";}
+36.1538%{content: "Develo|";}
+36.9231%{content: "Devel|";}
+37.6923%{content: "Deve|";}
+38.4615%{content: "Dev|";}
+39.2307%{content: "De|";}
+40%{content: "D|";}
+40.7692%{content: "|";}
+41.5384%{content: "";}
+42.3077%{content: "|";}
+43.0769%{content: "";}
+43.8461%{content: "|";}
+44.6154%{content: "";}
+45.3846%{content: "|";}
+46.1538%{content: "";}
+46.923%{content: "|";}
+47.6923%{content: "F|";}
+48.4615%{content: "Fr|";}
+49.2307%{content: "Fre|";}
+50%{content: "Free|";}
+50.7692%{content: "Freel|";}
+51.5384%{content: "Freela|";}
+52.3077%{content: "Freelan|";}
+53.0769%{content: "Freelanc|";}
+53.8461%{content: "Freelance|";}
+54.6153%{content: "Freelancer|";}
+55.3846%{content: "Freelancer";}
+56.1538%{content: "Freelancer|";}
+56.923%{content: "Freelancer";}
+57.6923%{content: "Freelancer|";}
+58.4615%{content: "Freelancer";}
+59.2307%{content: "Freelancer|";}
+60%{content: "Freelancer";}
+60.7692%{content: "Freelancer|";}
+61.5384%{content: "Freelance|";}
+62.3076%{content: "Freelanc|";}
+63.0769%{content: "Freelan|";}
+63.8461%{content: "Freela|";}
+64.6153%{content: "Freel|";}
+65.3846%{content: "Free|";}
+66.1538%{content: "Fre|";}
+66.923%{content: "Fr|";}
+67.6923%{content: "F|";}
+68.4615%{content: "|";}
+69.2307%{content: "";}
+70%{content: "|";}
+70.7692%{content: "";}
+71.5384%{content: "|";}
+72.3077%{content: "";}
+73.0769%{content: "|";}
+73.8461%{content: "";}
+74.6154%{content: "|";}
+75.3846%{content: "P|";}
+76.1538%{content: "Ph|";}
+76.9231%{content: "Pho|";}
+77.6923%{content: "Phot|";}
+78.4615%{content: "Photo|";}
+79.2308%{content: "Photog|";}
+80%{content: "Photogr|";}
+80.7692%{content: "Photogra|";}
+81.5385%{content: "Photograp|";}
+82.3077%{content: "Photograph|";}
+83.0769%{content: "Photographe|";}
+83.8462%{content: "Photographer|";}
+84.6154%{content: "Photographer";}
+85.3846%{content: "Photographer|";}
+86.1539%{content: "Photographer";}
+86.9231%{content: "Photographer|";}
+87.6923%{content: "Photographer";}
+88.4616%{content: "Photographer|";}
+89.2308%{content: "Photographer";}
+90%{content: "Photographer|";}
+90.7693%{content: "Photographe|";}
+91.5385%{content: "Photograph|";}
+92.3077%{content: "Photograp|";}
+93.077%{content: "Photogra|";}
+93.8462%{content: "Photogr|";}
+94.6154%{content: "Photog|";}
+95.3847%{content: "Photo|";}
+96.1539%{content: "Phot|";}
+96.9231%{content: "Pho|";}
+97.6924%{content: "Ph|";}
+98.4616%{content: "P|";}
+99.2309%{content: "|";}
+100%{content: "";}
+
+
+
+}
+
+
+
+.home-content{
+    text-align: center;
+    position: relative;
+    color: white;
+z-index: 3;
+}
+
+
+/*      Home Done        */
+
+
+
+
+.html-Width{
+    width: 85%;
+    }
+    .JS-Width{
+        width: 90%;
+    }
+
+    .left div div p span{
+        font-size: 16px;
+        font-weight: 400;
+        color: #4E4E4E;
+    }
+
+    
+    .left div div p span:first-child{
+        font-size: 17.6px; 
+        color: #1E1E1E;
+        font-weight: 600;
+      }
+
+.skill{
+    color: #1E1E1E;
+    font-size:17.6px ;
+    font-weight: 600;
+}
+.w-50 h5{
+    font-size: 32px;
+    color: #1E1E1E;
+    font-weight: 500;
+    position: relative;
+    line-height: 38.4px;
+
+}
+.w-50 h5::before{
+content: "";
+position: absolute;
+left: 0;
+bottom: -5px;
+height: 4px;
+width: 15%;
+background-color: #0078ff;
+}
+
+.right p{
+   font-size: 20px;
+   color: #4E4E4E;
+   font-weight: 300;
+    line-height: 30px;
+
+}
+
+.container .title{
+    font-size: 48px;
+    color: #1E1E1E;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.container .caption-title{
+color: #4E4E4E;
+font-weight: 400;
+font-size: 16px;
+position: relative;
+
+}
+
+.container .caption-title::after{
+    content: "";
+position: absolute;
+left: 50%;
+transform: translate(-50%,0%);
+bottom: -20px;
+height: 4px;
+width: 4%;
+background-color: #0078ff;
+}
+
+.services-skill{
+    width: 30%;
+}
+.services-skill div span{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100px;
+width: 100px;
+font-size: 2rem;
+border-radius: 50%;
+margin: auto;
+border: 10px solid #0078ff ;
+transition: all 700ms  ;
+}
+
+.services-skill:hover div span{
+border: 10px solid #CDE1F8;
+background-color: #0078ff ;
+color: black;
+}
+
+.achievements{
+    background-image: url('../images/counters-bg.jpg');
+    background-attachment: fixed;
+}
+ .layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 120, 255, 0.7);
+}
+
+.achievements-content div span:first-child{
+    display: flex;
+justify-content: center;
+align-items: center;
+height: 75px;
+width: 75px;
+font-size: 2rem;
+border-radius: 50%;
+margin: auto;
+border: 10px solid white ;
+color: white;
+}
+
+
+
+
+
+.work{
+    width: 30%;
+}
+.work div img{
+    transition: all 600ms;
+
+}
+.work div div h2{
+    font-size: 19.2px;
+    font-weight: 500;
+    color: #1E1E1E;
+}
+
+.work div div span{
+font-size: 12.8px;
+font-weight: 400;
+color: #4E4E4E;
+}
+.work div div span:first-of-type {
+color: #0078ff;
+}
+.work:hover img{
+    scale: 1.3;
+}
+
+
+
+
+
+.carousel-section{
+background-image: url('../images/overlay-bg.jpg');
+background-attachment: fixed;
+}
+
+.carousel-content .carousel .carousel-inner .carousel-item span{
+    font-size: 22.4px;
+    margin: 16px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.carousel-content .carousel .carousel-inner .carousel-item p{
+font-size: 20px;
+margin-bottom: 16px;
+padding: 0 208px;
+font-weight: 300;
+}
+.card-body h3{
+    font-weight: 500;
+    font-size: 20.8px;
+}
+.card-body h3 a{
+    color: black;
+    text-decoration: none;
+transition: all 600ms;
+}
+
+.card-body h3 a:hover{
+color:#0078ff;
+}
+.card .sub-title{
+    color: white;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform:  translate(-50% ,50%);
+    background-color: #0078ff;
+    text-transform: uppercase;
+    padding: 10px 15px 5px ;
+    border-radius: 12px;
+
+}
+.card .sub-title h6{
+    font-size: 11.2px;
+    font-weight: 500;
+}
+.card-footer .text-start span{
+    color: black;
+    transition: all 600ms;
+}
+
+.card-footer .text-start:hover span{
+color: #0078ff;
+}
+
+
+
+
+
+
+
+
+
+.contact-section {
+background-image: url('../images/overlay-bg.jpg');
+background-attachment: fixed;
+
+}
+
+.contact-content .w-50 h5 {
+margin-bottom: 20px;
+}
+
+.left-contact p{
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #4E4E4E;
+    margin:50px 10px 16px;
+}
+
+.left-contact ul {
+    list-style-type: none;
+    padding-left:10px ;
+}
+.left-contact ul li span{
+    color: #0078ff;
+    }
+
+.left-contact ul li{
+line-height: 30px;
+}
+.left-contact div ul{
+display: flex;
+}
+
+.left-contact div ul a span{
+display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+background-color: white;
+width: 40px;
+height: 40px;
+border: 4px solid #0078ff;
+border-radius: 50%;
+transition: all 600ms;
+}
+
+.left-contact div ul a span:hover{
+background-color: #0078ff;
+border: 4px solid #cde1f8 ;
+color: white;
+}
+.btn-message{
+    background-color: #0078ff;
+    color: white;
+    border-radius: 24px;
+    padding: 10px 15px;
+border:4px solid white ;
+transition: all 600ms;
+}
+
+.btn-message:hover{
+    color: white;
+background-color: #3393FF;
+border:4px solid #cde1f8 ;
+}
+
+footer{
+    background-color: #0062d3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+footer div a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.up-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   color: white; 
+   background-color: #0078FF;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   position: fixed;
+   right: 20px;
+   bottom: 20px;
+   z-index: 100;
+}
+
+.up-icon:hover{
+    background-color:#298EFF ;
+}
